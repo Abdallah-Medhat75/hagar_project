@@ -216,7 +216,7 @@ section.people .container .panel .desc {
 }
 section.people .container .panel .desc h2 {
   margin-top: 0;
-  color: #f67b23;
+  color: #df2d38;
 }
 section.people .container .panel .desc .discover {
   position: absolute;
@@ -228,7 +228,7 @@ section.people .container .panel .desc .discover a {
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  background-color: orangered;
+  background-color: #e71e24;
   color: white;
   width: 120px;
   height: 40px;
