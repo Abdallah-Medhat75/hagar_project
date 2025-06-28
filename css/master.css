@@ -77,12 +77,15 @@ header .container ul.links {
   margin: 0 21px;
   gap: 30px;
 }
-header .container a {
+header .container ul.links a {
   color: #c6c8c7;
   transition: color 0.3s;
 }
-header .container a.active, header .container a:hover {
-  color: #0649a1;
+header .container ul.links a.active, header .container ul.links a:hover {
+  color: #034ea2;
+}
+header .container ul.links a.active {
+  font-weight: bold;
 }
 
 a.start-story {
@@ -92,7 +95,7 @@ a.start-story {
   border-radius: 7px;
   padding: 0 20px;
   height: 40px;
-  background-color: #0649a1;
+  background-color: #034ea2;
   color: white;
 }
 
@@ -104,7 +107,7 @@ a.tell-story {
   padding: 0 20px;
   height: 40px;
   background-color: white;
-  color: #0649a1;
+  color: #034ea2;
   margin-right: auto;
   margin-left: auto;
   margin-top: 25px;
@@ -114,7 +117,7 @@ footer .container {
   display: flex;
   align-items: center;
   gap: 30px;
-  height: 250px;
+  height: 300px;
 }
 footer .container .copyright {
   flex-grow: 1;
@@ -123,7 +126,7 @@ footer .container div {
   height: 100px;
 }
 footer .container h3 {
-  color: #075491;
+  color: #034ea2;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -146,9 +149,9 @@ section.landing {
   padding-top: 150px;
   height: calc(100vh + 250px);
   overflow: hidden;
-  background-color: #ecf9ff;
+  background-color: #b9e5fb;
   text-align: center;
-  color: #075491;
+  color: #034ea2;
 }
 section.landing a.start-story {
   margin-top: 15px;
@@ -161,34 +164,35 @@ section.landing .cards {
   gap: 10px;
 }
 section.landing .cards .card {
-  padding: 0 25px;
   width: 300px;
   border-radius: 20px;
   height: 400px;
+  padding: 21px;
   cursor: pointer;
+  color: white;
   transition: transform 0.3s;
 }
 section.landing .cards .card:hover {
-  transform: translateY(-35px);
+  transform: translateY(-20px);
 }
-section.landing .cards .card:nth-child(1) {
-  background-color: orange;
-  transform: rotate(2deg);
+section.landing .cards .card-1 {
+  background-color: #f47920;
+  transform: rotate(4deg) translateY(30px);
   margin-top: 35px;
 }
-section.landing .cards .card:nth-child(1):hover {
-  transform: rotate(2deg) translateY(-35px);
+section.landing .cards .card-1:hover {
+  transform: rotate(4deg) translateY(-20px);
 }
-section.landing .cards .card:nth-child(2) {
-  background-color: lightseagreen;
+section.landing .cards .card-2 {
+  background-color: #4eb857;
 }
-section.landing .cards .card:nth-child(3) {
-  background-color: red;
-  transform: rotate(-2deg);
+section.landing .cards .card-3 {
+  background-color: #e31f26;
+  transform: rotate(-4deg) translateY(30px);
   margin-top: 35px;
 }
-section.landing .cards .card:nth-child(3):hover {
-  transform: rotate(-2deg) translateY(-35px);
+section.landing .cards .card-3:hover {
+  transform: rotate(-4deg) translateY(-20px);
 }
 
 .sep {
@@ -220,23 +224,29 @@ section.special .container .img-holder .img-coloring {
   border-radius: 50px;
   position: absolute;
   box-shadow: 0 0 5px #333;
+  overflow: hidden;
 }
 section.special .container .img-holder .img-coloring:nth-child(1) {
-  background-color: orangered;
+  background-color: #f47920;
   z-index: 3;
 }
 section.special .container .img-holder .img-coloring:nth-child(2) {
-  background-color: violet;
+  background-color: #e31f26;
   transform: rotate(5deg) translateY(15px);
   z-index: 2;
 }
 section.special .container .img-holder .img-coloring:nth-child(3) {
-  background-color: lightseagreen;
+  background-color: #4eb857;
   transform: rotate(10deg) translateY(30px);
   z-index: 1;
 }
 section.special .container .img-holder .img-coloring:hover {
   z-index: 1000;
+}
+section.special .container .img-holder .img-coloring img {
+  position: absolute;
+  top: -70px;
+  left: -97px;
 }
 section.special .container .desc p {
   line-height: 1.9;
@@ -246,7 +256,7 @@ section.invest {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ecf9ff;
+  background-color: #b9e5fb;
   height: 300px;
 }
 section.invest .container {
@@ -264,16 +274,17 @@ section.hid-hero .container {
   height: 300px;
   text-align: center;
   color: white;
-  background-color: #0649a1;
+  background-color: #034ea2;
 }
 
 section.graph {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ecf9ff;
+  background-color: #b9e5fb;
   height: 390px;
   text-align: center;
+  color: #034ea2;
 }
 section.graph a {
   margin-right: auto;

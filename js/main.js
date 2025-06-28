@@ -1,4 +1,6 @@
-const body = document.body;
-const test = 'JavaScript';
-console.log(`Hello ${test}`);
-body.style.backgroundColor = "lightseagreen";
+let select = document.getElementById("spec");
+let options = [...select.children];
+select.oninput = function () {
+    console.log(select.value);
+    location.href = select.value;
+}

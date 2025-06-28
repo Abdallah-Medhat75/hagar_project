@@ -149,90 +149,67 @@ footer .container ul {
   gap: 10px;
 }
 
-section.landing {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #b9e5fb;
-  position: relative;
-}
-section.landing .container {
+section.heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-section.landing .container h1, section.landing .container p {
   color: #034ea2;
+  text-align: center;
+  height: 300px;
 }
-section.landing .container form {
-  height: 35px;
-  position: absolute;
-  bottom: 30px;
-  display: flex;
-  align-self: flex-start;
-  gap: 10px;
-}
-section.landing .container form .search {
-  border: 1px solid #CCC;
-  border-radius: 7px;
-  overflow: hidden;
-}
-section.landing .container form .search input {
-  height: 100%;
+section.heading h1 {
+  font-size: 2rem;
 }
 
-section.people {
-  margin-top: 30px;
+section.nadawat {
+  margin-bottom: 90px;
 }
-section.people .container {
+section.nadawat .container {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+}
+section.nadawat .container .panel {
+  display: inherit;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 272px;
+  border: 3px solid #EEE;
+}
+section.nadawat .container .panel > * {
+  height: inherit;
+}
+section.nadawat .container .panel .nad-image {
+  width: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  border-left: inherit;
 }
-section.people .container .panel {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  height: 322px;
-}
-section.people .container .panel img {
-  width: 394px;
-  height: 100%;
-}
-section.people .container .panel .desc {
-  display: flex;
-  flex-direction: column;
-  padding: 0 35px;
-  padding-top: 20px;
-  width: calc(100% - 350px);
+section.nadawat .container .panel .text {
   position: relative;
-  height: 100%;
-  border: 3px solid #EEE;
+  padding: 25px;
+  flex-grow: 1;
+}
+section.nadawat .container .panel .text h2 {
+  color: #034ea2;
+  margin-bottom: 30px;
+}
+section.nadawat .container .panel .text p {
   line-height: 1.7;
-  border-right: none;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
 }
-section.people .container .panel .desc h2 {
-  margin-top: 0;
-  color: #f47920;
-}
-section.people .container .panel .desc .discover {
+section.nadawat .container .panel .text .event {
   position: absolute;
   bottom: 25px;
   left: 25px;
 }
-section.people .container .panel .desc .discover a {
+section.nadawat .container .panel .text .event a {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  background-color: #f47920;
+  background-color: #034ea2;
   color: white;
   width: 120px;
   height: 40px;

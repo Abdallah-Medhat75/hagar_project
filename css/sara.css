@@ -149,92 +149,49 @@ footer .container ul {
   gap: 10px;
 }
 
-section.landing {
-  height: 300px;
+section.profile {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #b9e5fb;
-  position: relative;
+  height: 89vh;
 }
-section.landing .container {
+section.profile * {
+  width: 50%;
+}
+section.profile .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  background-color: #d8eddd;
+  border-bottom-right-radius: 50px;
 }
-section.landing .container h1, section.landing .container p {
-  color: #034ea2;
+section.profile .text * {
+  width: 95%;
 }
-section.landing .container form {
-  height: 35px;
-  position: absolute;
-  bottom: 30px;
-  display: flex;
-  align-self: flex-start;
-  gap: 10px;
+section.profile .text .container {
+  padding-left: 95px;
+  padding-right: 95px;
 }
-section.landing .container form .search {
-  border: 1px solid #CCC;
-  border-radius: 7px;
-  overflow: hidden;
+section.profile .text h2 {
+  color: #4eb857;
+  font-size: 2.5rem;
 }
-section.landing .container form .search input {
-  height: 100%;
+section.profile .text span, section.profile .text p {
+  display: block;
+  line-height: 1.5;
+}
+section.profile img {
+  border-bottom-left-radius: 50px;
 }
 
-section.people {
-  margin-top: 30px;
+section.info {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-section.people .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+section.info .container .describe .underline {
+  text-decoration: underline;
 }
-section.people .container .panel {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  height: 322px;
+section.info .container .describe > * {
+  width: 50%;
 }
-section.people .container .panel img {
-  width: 394px;
-  height: 100%;
-}
-section.people .container .panel .desc {
-  display: flex;
-  flex-direction: column;
-  padding: 0 35px;
-  padding-top: 20px;
-  width: calc(100% - 350px);
-  position: relative;
-  height: 100%;
-  border: 3px solid #EEE;
-  line-height: 1.7;
-  border-right: none;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-section.people .container .panel .desc h2 {
-  margin-top: 0;
-  color: #f47920;
-}
-section.people .container .panel .desc .discover {
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-}
-section.people .container .panel .desc .discover a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 7px;
-  background-color: #f47920;
-  color: white;
-  width: 120px;
-  height: 40px;
-  font-size: 13px;
+section.info .container .describe > p {
+  line-height: 1.9;
 }
