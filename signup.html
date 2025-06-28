@@ -26,7 +26,29 @@
       </div>
     </header>
     <section class="signup">
-      <div class="container"><img src="imgs/signup.pug"></div>
+      <div class="container"><img src="imgs/signup.png">
+        <form action="control.php">
+          <div class="form-div">
+            <input type="text" name="username" placeholder="الاسم بالكامل">
+          </div>
+          <div class="form-div">
+            <input type="email" name="email" placeholder="البريد الإلكتروني">
+          </div>
+          <div class="form-div">
+            <input type="password" name="password" placeholder="كلمة السر"><i class="fa-regular fa-eye"></i>
+          </div>
+          <div class="form-div">
+            <input type="submit" value="إنشاء حساب">
+          </div><span>ادخل باستخدام</span>
+          <ul class="apis">
+            <li><a href="https://www.apple.com"><i class="fa-brands fa-apple"></i></a></li>
+            <li><a href="https://www.facebook.com">
+                 <i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.google.com"><img src="imgs/google.svg"></a></li>
+          </ul><span>امتلك حساب بالفعل
+            <button class="underline">تسجيل الدخول</button></span>
+        </form>
+      </div>
     </section>
     <footer>
       <div class="container">
@@ -61,6 +83,7 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer><script src="https://kit.fontawesome.com/ed80b4c56c.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

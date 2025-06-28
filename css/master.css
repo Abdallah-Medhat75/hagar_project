@@ -147,7 +147,7 @@ footer .container ul {
 
 section.landing {
   padding-top: 150px;
-  height: calc(100vh + 250px);
+  height: calc(100vh + 150px);
   overflow: hidden;
   background-color: #b9e5fb;
   text-align: center;

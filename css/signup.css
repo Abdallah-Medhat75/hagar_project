@@ -148,3 +148,95 @@ footer .container ul {
   justify-content: center;
   gap: 10px;
 }
+
+section.signup .container {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+}
+section.signup .container > * {
+  width: 50%;
+  height: 100%;
+}
+section.signup .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+section.signup .container form .form-div {
+  position: relative;
+}
+section.signup .container form .form-div input {
+  border: 3px solid #EEE;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0 10px;
+}
+section.signup .container form .form-div input[type=submit] {
+  background-color: #034ea2;
+  color: white;
+  border: none;
+}
+section.signup .container form .form-div input::placeholder {
+  color: #CCC;
+}
+section.signup .container form .form-div input:focus::placeholder {
+  color: transparent;
+}
+section.signup .container form .form-div i.fa-eye {
+  position: absolute;
+  font-size: 1.3rem;
+  color: #CCC;
+  cursor: pointer;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s;
+}
+section.signup .container form .form-div i.fa-eye:hover {
+  color: initial;
+}
+section.signup .container form ul.apis {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+section.signup .container form ul.apis li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border: 2px solid #EEE;
+  flex-grow: 1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+section.signup .container form ul.apis i.fa-facebook {
+  color: #4267B2;
+}
+section.signup .container form ul.apis img {
+  width: 2rem;
+}
+section.signup .container form ul.apis a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+}
+section.signup .container form span {
+  margin-top: 20px;
+  text-align: center;
+}
+section.signup .container form span button {
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #034ea2;
+}
